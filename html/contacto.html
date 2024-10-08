@@ -10,7 +10,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-dark-subtle">
     <header>
         <div class="logo-navbar">
             <img src="" alt="logo">
@@ -31,24 +31,24 @@
         </div>
     </header>
 
-    <main>
-        <h1>Formulario de Contacto</h1>
+    <main class="bg-dark-subtle">
+        <h1 class="my-4">Formulario de Contacto</h1>
         <form action="">
-            <fieldset class="container-contacto">
+            <fieldset class="d-flex flex-column col-5 mx-auto text-center">
                 <p>Si tienes alguna pregunta, inquietud o simplemente deseas ponerte en contacto con nosotros, no dudes
                     en enviarnos un mensaje. Estaremos encantados de ayudarte y responder lo antes posible. Completa el
                     formulario a continuación y nos pondremos en contacto contigo pronto.</p>
 
                 <label for="">Nombre: </label>
-                <input type="text" required>
+                <input class="form-control mb-3" type="text" required>
 
                 <label for="">Email: </label>
-                <input type="email" required>
+                <input class="form-control mb-3" type="email" required>
 
                 <label for="">Mensaje: </label>
-                <textarea name="" id="" required></textarea>
+                <textarea class="form-control" name="" id="" required></textarea>
 
-                <input class="submit" type="submit" name="" id="">
+                <input class="submit btn btn-primary col-4 mx-auto mt-5 mb-5" type="submit" name="" id="">
             </fieldset>
         </form>
     </main>
