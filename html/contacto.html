@@ -11,24 +11,60 @@
 </head>
 
 <body class="bg-dark-subtle">
-    <header>
-        <div class="logo-navbar">
+    <header class="bg-warning border-bottom border-2 border-warning-subtle">
+        <nav class="navbar absolute-top bg-warning" id="navbar-bootstrap">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="" alt="Logo">Look Urbano</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header bg-warning-subtle">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Look Urbano</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-warning-subtle">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./ingresar.html">Ingresar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./registrarse.html">Registrarse</a>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="logo-navbar" id="navbar-custom">
             <img src="" alt="logo">
             <h2>Look Urbano</h2>
 
             <nav class="navbar">
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../html/productos.html">Productos</a></li>
-                    <li><a href="../html/contacto.html">Contacto</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="acceso">
-            <a href="../html/ingresar.html">Ingresar</a>
-            <a href="../html/registrarse.html">Registrarse</a>
+        <div class="acceso" id="acceso-custom">
+            <a href="./ingresar.html">Ingresar</a>
+            <a href="./registrarse.html">Registrarse</a>
         </div>
+
     </header>
 
     <main class="bg-dark-subtle">

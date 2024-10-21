@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    header {
+        display: block;
+    }
+
+    #navbar-custom {
+        display: none;
+    }
+
+    #acceso-custom {
+        display: none;
+    }
+
+    .first-section {
+        display: block;
+        text-align: center;
+    }
+
+    .second-section {
+        display: block;
+        text-align: center;
+    }
+}

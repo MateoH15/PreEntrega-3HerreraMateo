@@ -1,0 +1,59 @@
+@mixin button-styles($padding, $border-radius, $border, $bg-color, $margin) {
+    padding: $padding;
+    border-radius: $border-radius;
+    border: $border;
+    background-color: $bg-color;
+    margin: $margin;
+}
+
+.main-productos {
+    text-align: center;
+
+    h1 {
+        color: $colorh1;
+    }
+
+    p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .busqueda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .section-productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        color: #f8fc10;
+
+        div {
+            .img-modelos-productos {
+                width: 20rem;
+                height: 20rem;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px 1px black;
+            }
+
+            .precio {
+                font-size: 2rem;
+                color: aliceblue;
+            }
+
+            button {
+                @include button-styles(5px, 10px, 1px solid #b4953f, #6e6e47, 2px);
+            }
+
+            button:hover {
+                box-shadow: 0 0 10px 1px #e6e61d;
+            }
+        }
+    }
+}
