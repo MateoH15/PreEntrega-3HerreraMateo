@@ -1,0 +1,23 @@
+@keyframes CambioColor {
+    0% {
+        background-color: #dbbc34;
+    }
+
+    50% {
+        background-color: #afd888;
+    }
+
+    100% {
+        background-color: #6e5321;
+    }
+}
+
+#boton-enviar {
+    background-color: #dfd78e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: CambioColor 3s infinite;
+}

@@ -8,7 +8,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px;
 }
 header .logo-navbar {
   margin-left: 10px;
@@ -16,6 +15,12 @@ header .logo-navbar {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+header .logo-navbar #logo {
+  padding: 0;
+  margin: 0;
+  width: 6rem;
+  height: 6rem;
 }
 header .logo-navbar h2 {
   font-size: 2rem;
@@ -74,25 +79,13 @@ main h1 {
 main .img-inicio {
   display: flex;
   border-bottom: 2px solid #d4d636;
-  overflow: hidden;
-  position: relative;
-  animation: desplazamiento 90s linear infinite;
-  width: 400%;
 }
 main .img-inicio .imagen-modelos {
-  max-width: 100%;
-  height: 18rem;
-}
-@keyframes desplazamiento {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  height: 17.85rem;
 }
 
 .descripcion {
+  color: #552509;
   text-align: center;
   max-width: 700px;
   margin: 0 auto;
@@ -127,6 +120,7 @@ main .img-inicio .imagen-modelos {
   justify-content: center;
 }
 .first-section div p {
+  color: #552509;
   font-size: larger;
   font-style: italic;
 }
@@ -159,6 +153,7 @@ main .img-inicio .imagen-modelos {
   justify-content: center;
 }
 .second-section div p {
+  color: #552509;
   font-size: larger;
   font-style: italic;
 }
@@ -181,6 +176,27 @@ footer {
   border-top: 2px solid #d4d636;
 }
 
+@keyframes CambioColor {
+  0% {
+    background-color: #dbbc34;
+  }
+  50% {
+    background-color: #afd888;
+  }
+  100% {
+    background-color: #6e5321;
+  }
+}
+#boton-enviar {
+  background-color: #dfd78e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: CambioColor 3s infinite;
+}
+
 .main-productos {
   text-align: center;
 }
@@ -188,6 +204,7 @@ footer {
   color: #362802;
 }
 .main-productos p {
+  color: #552509;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .main-productos .busqueda {
@@ -231,6 +248,19 @@ footer {
   header {
     display: block;
   }
+  main h1 {
+    font-size: 3.5rem;
+  }
+  .main-productos p {
+    margin: 0 20px;
+  }
+  .main-productos .section-productos div .img-modelos-productos {
+    width: 17rem;
+    height: 17rem;
+  }
+  .descripcion {
+    margin: 0 20px;
+  }
   #navbar-custom {
     display: none;
   }
@@ -245,9 +275,27 @@ footer {
     display: block;
     text-align: center;
   }
+  #carouselExampleSlidesOnly {
+    display: block;
+  }
+  #imagenes-inicio {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   #navbar-bootstrap {
+    display: none;
+  }
+  #carouselExampleSlidesOnly {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  #imagenes-inicio .imagen-modelos {
+    width: 100vh;
+    height: 18rem;
+  }
+  #imagenes-inicio .imagen-modelos:nth-child(3) {
     display: none;
   }
 }

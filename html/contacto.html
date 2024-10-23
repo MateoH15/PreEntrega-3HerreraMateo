@@ -10,11 +10,11 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body class="bg-dark-subtle">
+<body class="bg-warning-subtle">
     <header class="bg-warning border-bottom border-2 border-warning-subtle">
         <nav class="navbar absolute-top bg-warning" id="navbar-bootstrap">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="" alt="Logo">Look Urbano</a>
+                <a class="navbar-brand" href="#">Look Urbano</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@
         </nav>
 
         <div class="logo-navbar" id="navbar-custom">
-            <img src="" alt="logo">
+            <img id="logo" src="../images/Look_urbano_logo-removebg-preview.png" alt="logo">
             <h2>Look Urbano</h2>
 
             <nav class="navbar">
@@ -67,7 +67,7 @@
 
     </header>
 
-    <main class="bg-dark-subtle">
+    <main class="bg-warning-subtle">
         <h1 class="my-4">Formulario de Contacto</h1>
         <form action="">
             <fieldset class="d-flex flex-column col-5 mx-auto text-center">
@@ -84,7 +84,7 @@
                 <label for="">Mensaje: </label>
                 <textarea class="form-control" name="" id="" required></textarea>
 
-                <input class="submit btn btn-primary col-4 mx-auto mt-5 mb-5" type="submit" name="" id="">
+                <button id="boton-enviar" type="submit" class="btn btn-secondary mt-4 mb-4 mx-auto">Enviar</button>
             </fieldset>
         </form>
     </main>

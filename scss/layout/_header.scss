@@ -3,7 +3,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 13px;
 
     .logo-navbar {
         margin-left: 10px;
@@ -11,6 +10,13 @@ header {
         display: flex;
         align-items: center;
         gap: 5px;
+
+        #logo {
+            padding: 0;
+            margin: 0;
+            width: 6rem;
+            height: 6rem;
+        }
 
         h2 {
             font-size: 2rem;

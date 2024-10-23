@@ -3,6 +3,31 @@
         display: block;
     }
 
+    main {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+
+    .main-productos {
+        p {
+            margin: 0 20px;
+        }
+
+        .section-productos {
+            div {
+                .img-modelos-productos {
+                    width: 17rem;
+                    height: 17rem;
+                }
+            }
+        }
+    }
+
+    .descripcion {
+        margin: 0 20px;
+    }
+
     #navbar-custom {
         display: none;
     }
@@ -20,4 +45,13 @@
         display: block;
         text-align: center;
     }
+
+    #carouselExampleSlidesOnly {
+        display: block;
+    }
+
+    #imagenes-inicio {
+        display: none;
+    }
+
 }
