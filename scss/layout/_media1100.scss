@@ -1,0 +1,25 @@
+@media (max-width: 1100px) {
+    #imagenes-inicio {
+        .imagen-modelos {
+            width: 100vh;
+            height: 18rem;
+        }
+    }
+
+    #imagenes-inicio {
+        .imagen-modelos:first-child {
+            width: 22rem;
+            height: 14rem;
+        }
+
+        .imagen-modelos:nth-child(3) {
+            width: 21rem;
+            height: 14rem;
+        }
+
+        .imagen-modelos:nth-child(2) {
+            width: 23rem;
+            height: 14rem;
+        }
+    }
+}

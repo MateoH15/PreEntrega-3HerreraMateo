@@ -255,8 +255,8 @@ footer {
     margin: 0 20px;
   }
   .main-productos .section-productos div .img-modelos-productos {
-    width: 17rem;
-    height: 17rem;
+    width: 18rem;
+    height: 18rem;
   }
   .descripcion {
     margin: 0 20px;
@@ -271,9 +271,15 @@ footer {
     display: block;
     text-align: center;
   }
+  .first-section img {
+    width: 17rem;
+  }
   .second-section {
     display: block;
     text-align: center;
+  }
+  .second-section img {
+    width: 17rem;
   }
   #carouselExampleSlidesOnly {
     display: block;
@@ -288,7 +294,7 @@ footer {
     margin: 100px 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #navbar-bootstrap {
     display: none;
   }
@@ -301,8 +307,17 @@ footer {
     width: 100vh;
     height: 18rem;
   }
+  #imagenes-inicio .imagen-modelos:first-child {
+    width: 22rem;
+    height: 14rem;
+  }
   #imagenes-inicio .imagen-modelos:nth-child(3) {
-    display: none;
+    width: 21rem;
+    height: 14rem;
+  }
+  #imagenes-inicio .imagen-modelos:nth-child(2) {
+    width: 23rem;
+    height: 14rem;
   }
 }
 

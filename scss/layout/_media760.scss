@@ -9,6 +9,7 @@
         }
     }
 
+
     .main-productos {
         p {
             margin: 0 20px;
@@ -17,8 +18,8 @@
         .section-productos {
             div {
                 .img-modelos-productos {
-                    width: 17rem;
-                    height: 17rem;
+                    width: 18rem;
+                    height: 18rem;
                 }
             }
         }
@@ -39,11 +40,19 @@
     .first-section {
         display: block;
         text-align: center;
+
+        img {
+            width: 17rem;
+        }
     }
 
     .second-section {
         display: block;
         text-align: center;
+
+        img {
+            width: 17rem;
+        }
     }
 
     #carouselExampleSlidesOnly {
